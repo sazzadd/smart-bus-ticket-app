@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Smart Bus Ticketing Apps</title>
+    <!-- my style sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
     <!-- daisy cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -19,21 +21,54 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- font aosome sdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
   </head>
 
   <body>
     <section
-      class="w-11/12 mx-auto min-h-screen bg-white shadow-md py-4 px-4 grid grid-cols-3 gap-3 rounded-lg rounded-2xl"
+      class="w-11/12 mx-auto min-h-screen justify-center flex-col bg-white shadow-md grid grid-cols-3 gap-5 rounded-3xl"
     >
-      <div class="col-span-2 bg bg-red-300">
-        <!-- seat sec  -->
-        <div  class="text-2xl">
+      <div class="col-span-2 py-4 px-4">
+        <!-- seat heding  -->
+        <div class="text-2xl font-semibold">
           <h2>Select Your Seat</h2>
         </div>
-        <div class="border-b border-dashed border-gray-400 pb-4"></div>
+        <div class="border-b-2 border-dashed border-gray-200 pb-4"></div>
+        <div class="flex justify-between py-3">
+          <p>
+            <i class="fas fa-chair"></i>
+            <span class="text-gray-400 text-lg">Available</span>
+          </p>
+          <p>
+            <i class="fas fa-chair" style="color: #1dd100"></i>
+            <span class="text-[#1DD100] font-semibold text-lg">Selected</span>
+          </p>
+        </div>
+        <div class="border-b-2 border-dashed border-gray-200 pb-1"></div>
+        <!--  seat column Start -->
+
+        <section
+          class="grid grid-cols-12 bg-fuchsia-200  items-center gap-y-4 mr-20 inter"
+        >
+
+        <!-- font seat -->
+       <p class="col-span-1"></p>
+       <div class="col-span-11  grid grid">
+
+       </div>
+      
+      </section>
       </div>
-      <div class="bg-green-200">
+      <div class="bg-green-200 py-4 px-4">
         <!-- input sec -->
+        <div class="text-2xl font-semibold">
+          <h2>Book Your Seat</h2>
+        </div>
       </div>
     </section>
 

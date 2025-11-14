@@ -1,10 +1,15 @@
-// tailwind.config.js
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  variants: {
-    fill: [],
+  content: ["./*.html", "./src/**/*.{html,js}"],
+
+  theme: {
     extend: {
-      borderColor: ["focus-visible"],
-      opacity: ["disabled"],
+      colors: {
+        primary: "#1DD100",  // তোমার কাস্টম color
+        secondary: "#0E9F6E",
+      },
     },
   },
+
+  plugins: [],
 };
