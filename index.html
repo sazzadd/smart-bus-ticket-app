@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Smart Bus Ticketing Apps</title>
-        <!-- daisy cdn -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet"
-            type="text/css" />
-        <script
-            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Bus Ticketing Apps</title>
+    <!-- my style sheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- daisy cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-        <!-- my style  -->
+        <!-- fortawesome style  -->
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
-    </head>
+    <!-- tailwind css -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <body>
         <section
@@ -42,3 +53,337 @@
 
     </body>
 </html>
+
+    <!-- font aosome sdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <section
+      class="w-11/12 mx-auto min-h-screen justify-center flex-col bg-white shadow-md grid grid-cols-3 gap-5 rounded-3xl"
+    >
+      <div class="col-span-2 py-4 px-4">
+        <!-- seat heding  -->
+        <div class="text-2xl font-semibold">
+          <h2>Select Your Seat</h2>
+        </div>
+        <div class="border-b-2 border-dashed border-gray-200 pb-4"></div>
+        <div class="flex justify-between py-3">
+          <p>
+            <i class="fas fa-chair"></i>
+            <span class="text-gray-400 text-lg">Available</span>
+          </p>
+          <p>
+            <i class="fas fa-chair" style="color: #1dd100"></i>
+            <span class="text-[#1DD100] font-semibold text-lg">Selected</span>
+          </p>
+        </div>
+        <div class="border-b-2 mb-3 border-dashed border-gray-200"></div>
+        <!--  seat column Start -->
+
+        <section class="grid grid-cols-12 items-center gap-y-6 mr-20 inter">
+          <!-- font seat -->
+          <p class="col-span-1"></p>
+          <div class="col-span-11 grid grid-cols-10">
+            <p class="col-span-8"></p>
+            <!-- <button class="btn col-span-2 p-2">
+              <img src="./images/steering-wheel.png" alt="" />
+              <p>Driver</p>
+            </button> -->
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#1DD100] hover:text-white transition-colors duration-500 ease-out"
+            >
+              <img src="./images/steering-wheel.png" alt="" />
+              <p>Driver</p>
+            </button>
+          </div>
+          <!-- 1st Row  A-->
+          <p class="col-span-1">A</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-6 text-center items-center"
+          >
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              A1
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              A2
+            </button>
+            <span class="col-span-2"></span>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              A3
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              A4
+            </button>
+          </div>
+
+          <!-- 2nd Row  B-->
+          <p class="col-span-1">B</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-6 text-center items-center"
+          >
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              B1
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              B2
+            </button>
+            <span class="col-span-2"></span>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              B3
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              B4
+            </button>
+          </div>
+          <!-- 3 Row  C-->
+          <p class="col-span-1">C</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-6 text-center items-center"
+          >
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              C1
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              C2
+            </button>
+            <span class="col-span-2"></span>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              C3
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              C4
+            </button>
+          </div>
+          <!-- 4 Row  D-->
+          <p class="col-span-1">D</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-6 text-center items-center"
+          >
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              D1
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              D2
+            </button>
+            <span class="col-span-2"></span>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              D3
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              D4
+            </button>
+          </div>
+
+          <!-- 5 Row  E-->
+          <p class="col-span-1">E</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-6 text-center items-center"
+          >
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              E1
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              E2
+            </button>
+            <span class="col-span-2"></span>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              E3
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              E4
+            </button>
+          </div>
+          <!-- 6 Row  F-->
+          <p class="col-span-1">F</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-6 text-center items-center"
+          >
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              F1
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              F2
+            </button>
+            <span class="col-span-2"></span>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              F3
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              F4
+            </button>
+          </div>
+          <!-- 7 Row  G-->
+          <p class="col-span-1">G</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-6 text-center items-center"
+          >
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              G1
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              G2
+            </button>
+            <span class="col-span-2"></span>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              G3
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              G4
+            </button>
+          </div>
+          <!-- 6 Row  H-->
+          <p class="col-span-1">H</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-6 text-center items-center"
+          >
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              H1
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              H2
+            </button>
+            <span class="col-span-2"></span>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              H3
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              H4
+            </button>
+          </div>
+          <!-- 6 Row  I-->
+          <p class="col-span-1">I</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-6 text-center items-center"
+          >
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              I1
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              I2
+            </button>
+            <span class="col-span-2"></span>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              I3
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              I4
+            </button>
+          </div>
+          <!-- 6 Row  F-->
+          <p class="col-span-1">J</p>
+          <div
+            class="col-span-11 grid grid-cols-10 gap-6 text-center items-center"
+          >
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              J1
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              J2
+            </button>
+            <span class="col-span-2"></span>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              J3
+            </button>
+            <button
+              class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
+            >
+              J4
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="bg-green-200 py-4 px-4">
+        <!-- input sec -->
+        <div class="text-2xl font-semibold">
+          <h2>Book Your Seat</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- js -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
+
