@@ -13,12 +13,13 @@
       type="text/css"
     />
 
-        <!-- fortawesome style  -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- fortawesome style  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
 
     <!-- tailwind css -->
-
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- google font -->
@@ -26,33 +27,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
-    <body>
-        <section
-            class="w-11/12 mx-auto py-4 px-8 rounded shadow-sm gap-5 grid grid-cols-3 bg-white">
-            <div class="col-span-2 ">
-                <div>
-                    <h3 class="text-2xl font-semibold ">Select Your
-                        Seat</h3>
-                </div>
-                <div
-                    class="border-b-2 border-dashed border-gray-300  my-4 "></div>
-                <div class="flex justify-between mt-2">
-                    <p class="text-lg py-1">
-                        <i class="fa-solid fa-chair"></i>
-                        <span class="text-gray-500">Available</span>
-                    </p>
-
-                </div>
-            </div>
-            <div class="bg-red-400 col-span-1">input sec</div>
-
-        </section>
-
-        <!-- js -->
-
-    </body>
-</html>
 
     <!-- font aosome sdn -->
     <link
@@ -374,11 +348,70 @@
           </div>
         </section>
       </div>
+      <!-- right-side input section -->
       <div class="bg-green-200 py-4 px-4">
-        <!-- input sec -->
         <div class="text-2xl font-semibold">
           <h2>Book Your Seat</h2>
         </div>
+        <div class="border-b-2 border-dashed border-gray-200 pb-4"></div>
+        <section class="inter">
+          <div class="bg-[#F7F8F8] rounded-xl pl-7 pr-7">
+            <div class="text-[#030712] justify-between flex pt-7">
+              <div class="flex">
+                <p class="text-base font-medium">Seat</p>
+                <span
+                  class="bg-[#1DD100] text-[12px] h-5 w-5 -bottom-2 rounded-full text-white flex justify-center items-center"
+                  >0</span
+                >
+              </div>
+              <div>
+                <p class="text-base font-medium">Class</p>
+              </div>
+              <div>
+                <p class="text-base font-medium">Price</p>
+              </div>
+            </div>
+            <div class="border-b-2 border-dashed border-gray-200 pb-4"></div>
+            <ul class="space-y-5 pt-4">
+              <h3 class="font-semibold text-center capitalize">
+                No Seat Available
+              </h3>
+            </ul>
+            <div class="border-b-2 border-dashed border-gray-300 pb-4"></div>
+            <div class="flex justify-between">
+              <div>
+                <p class="text-base font-medium">Total Price</p>
+              </div>
+              <div>
+                <p class="text-base font-medium">1000</p>
+              </div>
+            </div>
+            <div class="relative w-full my-4">
+              <input
+                type="text"
+                placeholder="Have a coupon?"
+                class="input w-full pr-32 h-12 text-base"
+              />
+
+              <button
+                class="absolute right-2 top-1/2 -translate-y-1/2 btn btn-sm h-10 z-10 bg-[#1DD100] text-white hover:bg-[#16b500]"
+              >
+                Apply
+              </button>
+            </div>
+
+            <div class="border-b-2 border-dashed border-gray-300 pb-1"></div>
+
+            <div class="flex justify-between">
+              <div>
+                <p class="text-base font-medium">Total Price</p>
+              </div>
+              <div>
+                <p class="text-base font-medium">1000</p>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -386,4 +419,3 @@
     <script src="./js/app.js"></script>
   </body>
 </html>
-
