@@ -1,4 +1,11 @@
 console.log("hello");
+const selectedSeatEl = document.getElementById("selected-seat");
 function handleSelectSeat(event) {
-  console.log(event);
+  console.log(event.innerText);
+  selectedSeatEl.innerHTML = `<li class="flex justify-between text-base font-normal">
+    <span>${event.innerText}</span>
+    <span>Economy</span>
+    <span>550</span>
+  
+  </li>`;
 }

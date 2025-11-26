@@ -79,7 +79,8 @@
           <div
             class="col-span-11 grid grid-cols-10 gap-6 text-center items-center"
           >
-            <button
+            <button 
+              onclick="handleSelectSeat(this)"
               class="col-span-2 text-center px-1 py-6 bg-[#F7F8F8] btn rounded-lg hover:bg-[#030712] hover:text-white transition-colors duration-500 ease-out"
             >
               A1
@@ -372,7 +373,7 @@
               </div>
             </div>
             <div class="border-b-2 border-dashed border-gray-200 pb-4"></div>
-            <ul class="space-y-5 pt-4">
+            <ul id="selected-seat" class="space-y-5 pt-4">
               <h3 class="font-semibold text-center capitalize">
                 No Seat Available
               </h3>
