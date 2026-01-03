@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Smart Bus Ticketing Apps</title>
       <!-- my style sheet -->
-      <link rel="stylesheet" href="./css/style.css" />
+      <link rel="stylesheet" href="./src/css/style.css" />
       <link href="./output.css" rel="stylesheet">
       <!-- daisy cdn -->
       <link
@@ -53,12 +53,17 @@
                         <div>
                            <span class="bg-[#1cd1002b] px-3 py-2 rounded">
                               <i class="fas fa-chair" style="color: #1dd100"></i>
-                  <span class="text-[#1DD100] font-semibold text-lg">40 Seat Left</span>
+                  <span id="available-seat" class="text-[#1DD100] font-semibold text-lg">40 </span><span class="text-[16px] font-bold">Seat Left</span>
                            </span>
                         </div>
                      </div>
                   </div>
-                  <div class="col-span-1 ">hh</div>
+                  <div class="col-span-1 justify-center items-center text-center ">
+
+                     <span class="h-8 w-7 text-center mx-auto flex justify-center font-bold text-xl rounded-full bg-green-300">$</span>
+                     <span class="text-2xl font-medium">550</span>
+                     <span>per seat</span>
+                  </div>
                </section>
               <section
          class="w-11/12 bg-white mx-auto min-h-screen justify-center flex-col bg-re shadow-md grid grid-cols-3 gap-5 rounded-3xl"
@@ -441,7 +446,7 @@
                   <div class="border-b-2 border-dashed border-gray-300 pb-4"></div>
                   <div class="flex justify-between py-2">
                      <div>
-                        <p class="text-base font-medium">Total Price</p>
+                        <p class="text-base font-medium" id="total-price">Total Price</p>
                      </div>
                      <div>
                         <p class="text-base font-medium">1000</p>
