@@ -5,6 +5,8 @@ const availableSeatEl = document.getElementById("available-seat");
 const totalPriceEl = document.getElementById("total-price");
 const couponInputEl = document.getElementById("coupon-input-field");
 const couponBtn = document.getElementById("coupon-btn");
+const defaultText = document.getElementById("default-text");
+const grandTotalEl = document.getElementById("grand-total");
 
 let SelectedSeat = [];
 let totalPrice = 0;
@@ -19,6 +21,9 @@ function handleSelectSeat(event) {
     SelectedSeat.push(event.innerText);
     console.log(SelectedSeat);
     totalSeat.innerText = SelectedSeat.length;
+
+    // default text remove
+    defaultText.classList.add("hidden");
 
     selectedSeatEl.innerHTML += `<li class="flex justify-between text-base font-normal">
     <span>${event.innerText}</span>
@@ -46,3 +51,21 @@ function handleSelectSeat(event) {
     alert("maximum seat booked");
   }
 }
+
+document.getElementById("coupon-btn").addEventListener("click", function () {
+  const couponInputValue = couponInputEl.value;
+  let couponSave = 0;
+  if (couponInputValue !== "NEW50" && couponInputValue !== "SAZZAD") {
+    alert("Your Provided coupon is not valid");
+    return;
+  }
+  if (couponInputValue == "NEW50") {
+    couponSave = totalPrice * 0.15;
+  } 
+  else if (couponInputValue == "SAZZAD") {
+    couponSave = totalPrice * 0.2;
+  }
+
+  const grandTotalValue = totalPrice - couponSave;
+  grandTotalEl.innerText = grandTotalValue.toFixed(2);
+});
