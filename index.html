@@ -496,12 +496,19 @@
                   NEXT
                   </button>
                   <dialog id="my_modal_3" class="modal">
-                     <div class="modal-box">
-                        <form method="dialog">
+                     <div class="modal-box items-center flex justify-center flex-col ">
+
+                        <form method="dialog" class="">
                            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                         </form>
-                        <h3 class="text-lg font-bold">Hello!</h3>
+                        <div class="items-center flex justify-center flex-col">
+                           <div class="w-9 h-8 rounded-full bg-green-400 flex items-center justify-center"><i class="fa-solid fa-check bold text-white text-[22px]"></i></div>
+                                   <h3 class="text-lg font-bold">Hello!</h3>
                         <p class="py-4">Press ESC key or click on ✕ button to close</p>
+                        <button class="btn text-lg bg-green-300 " id="continue-btn"> continue</button>
+                        </div>
+                
+
                      </div>
                   </dialog>
                </div>

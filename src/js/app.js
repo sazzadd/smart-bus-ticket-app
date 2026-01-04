@@ -96,3 +96,8 @@ phoneNumberEl.addEventListener("input", function (e) {
     nextBtnEl.removeAttribute("disabled");
   }
 });
+
+document.getElementById("continue-btn").addEventListener("click", function(){
+
+  window.location.reload()
+})
