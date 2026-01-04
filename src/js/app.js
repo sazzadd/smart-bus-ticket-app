@@ -7,6 +7,7 @@ const couponInputEl = document.getElementById("coupon-input-field");
 const couponBtn = document.getElementById("coupon-btn");
 const defaultText = document.getElementById("default-text");
 const grandTotalEl = document.getElementById("grand-total");
+const showCouponPrice = document.getElementById("show-coupon-price");
 
 let SelectedSeat = [];
 let totalPrice = 0;
@@ -61,11 +62,28 @@ document.getElementById("coupon-btn").addEventListener("click", function () {
   }
   if (couponInputValue == "NEW50") {
     couponSave = totalPrice * 0.15;
-  } 
-  else if (couponInputValue == "SAZZAD") {
+  } else if (couponInputValue == "SAZZAD") {
     couponSave = totalPrice * 0.2;
   }
 
   const grandTotalValue = totalPrice - couponSave;
   grandTotalEl.innerText = grandTotalValue.toFixed(2);
+
+  showCouponPrice.innerHTML = `
+  <div class="flex justify-between py-2">
+                     <div>
+                        <p class="text-base font-medium" >Discount</p>
+                     </div>
+                     <div>
+                        <p class="text-base font-medium" id="total-price"<span>BDT:</span>
+         <span>${couponSave.toFixed(2)}</span></p>
+                     </div>
+                  </div>
+  
+
+
+
+      
+      
+      `;
 });
