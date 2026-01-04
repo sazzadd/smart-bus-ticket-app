@@ -8,6 +8,8 @@ const couponBtn = document.getElementById("coupon-btn");
 const defaultText = document.getElementById("default-text");
 const grandTotalEl = document.getElementById("grand-total");
 const showCouponPrice = document.getElementById("show-coupon-price");
+const phoneNumberEl = document.getElementById("phone-num");
+const nextBtnEl = document.getElementById("next-btn");
 
 let SelectedSeat = [];
 let totalPrice = 0;
@@ -86,4 +88,11 @@ document.getElementById("coupon-btn").addEventListener("click", function () {
       
       
       `;
+});
+
+phoneNumberEl.addEventListener("input", function (e) {
+  const inputValue = e.target.value;
+  if (inputValue.length >= 11) {
+    nextBtnEl.removeAttribute("disabled");
+  }
 });
